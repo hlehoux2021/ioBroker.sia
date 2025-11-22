@@ -588,7 +588,7 @@ export class sia extends EventEmitter {
             default:
                 break;
         }
-        const regexmsg = /(.+?)\](\[(.*?)\])?(_(.+)){0,1}/gm;
+        const regexmsg = /(.+?)?\](\[(.*?)\])?(_(.+)){0,1}/gm;
         const regexmsg_result = regexmsg.exec(msg);
         if (!regexmsg_result || regexmsg_result.length !== 6) {
             throw new Error(`Incorrect format of data message ${msg}`);

@@ -629,8 +629,7 @@ export class sia extends EventEmitter {
             sia.id.length > 0 &&
             sia.seq.length > 0 &&
             sia.lpref.length > 0 &&
-            sia.act.length > 0 &&
-            sia.data_message.length > 0
+            sia.act.length > 0
         ) {
             return sia;
         }

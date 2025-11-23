@@ -559,7 +559,7 @@ class sia extends import_events.EventEmitter {
       ts
     };
     this.logger && this.logger.debug(`parseSIA : ${JSON.stringify(sia2)}`);
-    if (sia2 && sia2.id.length > 0 && sia2.seq.length > 0 && sia2.lpref.length > 0 && sia2.act.length > 0 && sia2.data_message.length > 0) {
+    if (sia2 && sia2.id.length > 0 && sia2.seq.length > 0 && sia2.lpref.length > 0 && sia2.act.length > 0) {
       return sia2;
     }
     throw new Error(`Could not parse SIA message ${data.toString()}. Required SIA fields missing`);
